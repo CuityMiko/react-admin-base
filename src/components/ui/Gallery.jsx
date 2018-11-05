@@ -95,8 +95,7 @@ class Gallery extends React.Component {
                             <img onClick={() => this.openGallery(v2)} alt="example" width="100%" src={v2} />
                         </div>
                         <div className="pa-m">
-                            <h3>React Admin</h3>
-                            <small><a href="https://yezihaohao.github.io/" target="_blank" rel="noopener noreferrer">https://yezihaohao.github.io/</a></small>
+                            <h3>React Admin Base</h3>
                         </div>
                     </Card>
                 </div>

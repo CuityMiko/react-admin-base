@@ -29,14 +29,11 @@ class App extends Component {
     componentDidMount() {
         const openNotification = () => {
             notification.open({
-              message: '博主-yezihaohao',
+              message: '欢迎光临',
               description: (
                   <div>
                       <p>
-                          GitHub地址： <a href="https://github.com/yezihaohao" target="_blank" rel="noopener noreferrer">https://github.com/yezihaohao</a>
-                      </p>
-                      <p>
-                          博客地址： <a href="https://yezihaohao.github.io/" target="_blank" rel="noopener noreferrer">https://yezihaohao.github.io/</a>
+                        欢迎进入React-Antd后台管理管理系统
                       </p>
                   </div>
               ),

@@ -52,7 +52,7 @@ class Login extends React.Component {
             <div className="login">
                 <div className="login-form" >
                     <div className="login-logo">
-                        <span>React Admin</span>
+                        <span>React Admin Base</span>
                     </div>
                     <Form onSubmit={this.handleSubmit} style={{maxWidth: '330px'}}>
                         <FormItem>
