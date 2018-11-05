@@ -1,5 +1,5 @@
-# react-admin
-react-admin system solution
+# react-admin-base
+react-admin-base system solution
 
 <img src="https://raw.githubusercontent.com/yezihaohao/react-admin/master/screenshots/logo.png" alt="logo" width="150" height="53" />
 
@@ -8,7 +8,7 @@ react-admin system solution
 
 <span style="color: rgb(184,49,47);">点击名称可跳转相关网站😄😄</span>
 
-- [react](https://facebook.github.io/react/)
+- [react](https://facebook.github.io/react/)(基础开发mvc框架)
 - [react-router](https://react-guide.github.io/react-router-cn/)(<span style="color: rgb(243,121,52);">react路由，4.x的版本，如果还使用3.x的版本，请切换分支（ps:分支不再维护）</span>)
 - [redux](https://redux.js.org/)(基础用法，但是封装了通用action和reducer，demo中主要用于权限控制（ps：目前可以用16.x的context api代替），可以简单了解下)
 - [antd](https://ant.design/index-cn)(<span style="color: rgb(243,121,52);">蚂蚁金服开源的react ui组件框架</span>)
@@ -22,13 +22,14 @@ react-admin system solution
 
 ### 代码目录
 ```js
-+-- build/                                  ---打包的文件目录
-+-- config/                                 ---npm run eject 后的配置文件目录
++-- dist/                                  ---打包的文件目录
++-- config/                                 ---webpack的配置文件目录
 +-- node_modules/                           ---npm下载文件目录
 +-- public/                                 
+|   --- favicon.ico							---站点ico文件
 |   --- index.html							---首页入口html文件
-|   --- npm.json							---echarts测试数据
-|   --- weibo.json							---echarts测试数据
+|   --- manifest.json						---站点manifest配置
+|   --- theme.less							---站点全局样式配置
 +-- src/                                    ---核心代码目录
 |   +-- axios                               ---http请求存放目录
 |   |    --- index.js
@@ -57,7 +58,7 @@ react-admin system solution
 |   --- index.js                            ---项目的整体js入口文件，包括路由配置等
 --- .env                                    ---启动项目自定义端口配置文件
 --- .eslintrc                               ---自定义eslint配置文件，包括增加的react jsx语法限制
---- package.json                                    
+--- package.json                            ---依赖库配置文件
 ```
 ### 安装运行
 ##### 1.下载或克隆项目源码
@@ -69,7 +70,7 @@ npm install --registry=https://registry.npm.taobao.org
 ```
 ##### 3.启动项目
 ```js
-npm start
+npm run dev
 ```
 ##### 4.打包项目
 ```js
