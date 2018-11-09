@@ -8,6 +8,7 @@ import React, { Component } from 'react';
 import { Col, Card, Row } from 'antd';
 import BreadcrumbCustom from '../BreadcrumbCustom';
 import styles from './index.module.less';
+import qs from 'qs'
 
 class Cssmodule extends Component {
     constructor(props) {
@@ -15,8 +16,10 @@ class Cssmodule extends Component {
     }
 
     componentDidMount() {
-        var _objstr = this.props.match.params.id;
-        console.log(JSON.parse(decodeURIComponent(_objstr)), 'params');
+        // console.log(JSON.stringify(this.props.location))
+        console.log(qs.parse(this.props.location.search.slice(1)).id)
+        // var _objstr = this.props.match.params.id;
+        // console.log(JSON.parse(decodeURIComponent(_objstr)), 'params');
         
     }
 

@@ -25,7 +25,15 @@ class Demo extends React.Component {
                 {id: 9, title: '数据'}
             ]
         }
-        this.props.history.push(`/main/cssModule/${encodeURIComponent(JSON.stringify(_obj))}`);
+        // this.props.history.push({
+        //     pathname: '/main/cssModule',
+        //     query: {
+        //         id: 123,
+        //         name: 'zhangsan'
+        //     }
+        // });
+        this.props.history.push('/main/cssModule?id=123&mid=456');
+        // this.props.history.push(`/main/cssModule/${encodeURIComponent(JSON.stringify(_obj))}`);
     }
 
     componentWillUnmount() {
