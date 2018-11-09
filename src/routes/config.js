@@ -63,6 +63,9 @@ export default {
         {
             key: '/main/cssModule', title: 'cssModule', icon: 'star', component: 'Cssmodule'
         },
+        {
+            key: '/main/cssModule/:id', title: 'cssModule', icon: 'star', component: 'Cssmodule'
+        },
     ],
     others: [] // 非菜单相关路由
 }

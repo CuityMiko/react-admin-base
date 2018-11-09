@@ -10,6 +10,16 @@ import BreadcrumbCustom from '../BreadcrumbCustom';
 import styles from './index.module.less';
 
 class Cssmodule extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    componentDidMount() {
+        var _objstr = this.props.match.params.id;
+        console.log(JSON.parse(decodeURIComponent(_objstr)), 'params');
+        
+    }
+
     render() {
         return (
             <div>
