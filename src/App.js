@@ -6,7 +6,7 @@ import { receiveData } from './action';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Routes from './routes';
-import { ThemePicker } from './components/widget';
+// import { ThemePicker } from './components/widget';
 
 const { Content, Footer } = Layout;
 
@@ -61,7 +61,7 @@ class App extends Component {
         return (
             <Layout>
                 {!responsive.data.isMobile && <SiderCustom collapsed={this.state.collapsed} />}
-                <ThemePicker />
+                {/* <ThemePicker /> */}
                 <Layout style={{flexDirection: 'column'}}>
                     <HeaderCustom toggle={this.toggle} collapsed={this.state.collapsed} user={auth.data || {}} />
                     <Content style={{ margin: '0 16px', overflow: 'initial', flex: '1 1 0' }}>

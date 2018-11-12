@@ -3,22 +3,6 @@ export default {
         { key: '/main/dashboard/index', title: '首页', icon: 'mobile', component: 'Dashboard' },
         { key: '/main/dome/index', title: 'Demo', icon: 'laptop', component: 'Demo' },
         {
-            key: '/main/ui', title: 'UI', icon: 'scan',
-            subs: [
-                { key: '/main/ui/buttons', title: '按钮', component: 'Buttons'},
-                { key: '/main/ui/icons', title: '图标', component: 'Icons'},
-                { key: '/main/ui/spins', title: '加载中', component: 'Spins'},
-                { key: '/main/ui/modals', title: '对话框', component: 'Modals'},
-                { key: '/main/ui/notifications', title: '通知提醒框', component: 'Notifications'},
-                { key: '/main/ui/tabs', title: '标签页', component: 'Tabs'},
-                { key: '/main/ui/banners', title: '轮播图', component: 'Banners'},
-                { key: '/main/ui/wysiwyg', title: '富文本', component: 'WysiwygBundle'},
-                { key: '/main/ui/drags', title: '拖拽', component: 'Drags'},
-                { key: '/main/ui/gallery', title: '画廊', component: 'Gallery'},
-                { key: '/main/ui/map', title: '地图', component: 'MapUi'},
-            ],
-        },
-        {
             key: '/main/animation', title: '动画', icon: 'rocket',
             subs: [
                 { key: '/main/animation/basicAnimations', title: '基础动画', component: 'BasicAnimations'},

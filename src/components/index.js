@@ -36,54 +36,8 @@ const Recharts = Loadable({
     loading: Loading
 });
 
-
-const Icons = Loadable({ 
-    loader: () => import('./ui/Icons'),
-    loading: Loading
-});
-
-const Buttons = Loadable({ 
-    loader: () => import('./ui/Buttons'),
-    loading: Loading
-});
-
-const Spins = Loadable({ 
-    loader: () => import('./ui/Spins'),
-    loading: Loading
-});
-
-const Modals = Loadable({ 
-    loader: () => import('./ui/Modals'),
-    loading: Loading
-});
-
-const Notifications = Loadable({ 
-    loader: () => import('./ui/Notifications'),
-    loading: Loading
-});
-
-const Tabs = Loadable({ 
-    loader: () => import('./ui/Tabs'),
-    loading: Loading
-});
-
-const Banners = Loadable({ 
-    loader: () => import('./ui/banners'),
-    loading: Loading
-});
-
-const Drags = Loadable({ 
-    loader: () => import('./ui/Draggable'),
-    loading: Loading
-});
-
 const Dashboard = Loadable({ 
     loader: () => import('./dashboard/Dashboard'),
-    loading: Loading
-});
-
-const Gallery = Loadable({ 
-    loader: () => import('./ui/Gallery'),
     loading: Loading
 });
 
@@ -112,16 +66,6 @@ const Cssmodule = Loadable({
     loading: Loading
 });
 
-const MapUi = Loadable({ 
-    loader: () => import('./ui/map'),
-    loading: Loading
-});
-
-const WysiwygBundle = Loadable({ 
-    loader: () => import('./ui/Wysiwyg'),
-    loading: WLoading // 文本页面单独的加载效果
-});
-
 const Demo = Loadable({ 
     loader: () => import('./demo/Demo'),
     loading: Loading
@@ -129,8 +73,7 @@ const Demo = Loadable({
 
 export default {
     BasicForm, BasicTable, AdvancedTable, AsynchronousTable,
-    Echarts, Recharts, Icons, Buttons, Spins, Modals, Notifications,
-    Tabs, Banners, Drags, Dashboard, Gallery, BasicAnimations,
-    ExampleAnimations, AuthBasic, RouterEnter, WysiwygBundle,
-    Cssmodule, MapUi, Demo
+    Echarts, Recharts, Dashboard, BasicAnimations,
+    ExampleAnimations, AuthBasic, RouterEnter,
+    Cssmodule, Demo
 }
