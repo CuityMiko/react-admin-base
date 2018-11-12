@@ -17,13 +17,6 @@ export default {
             ],
         },
         {
-            key: '/main/chart', title: '图表', icon: 'area-chart',
-            subs: [
-                { key: '/main/chart/echarts', title: 'echarts', component: 'Echarts' },
-                { key: '/main/chart/recharts', title: 'recharts', component: 'Recharts' },
-            ],
-        },
-        {
             key: '/subs4', title: '页面', icon: 'switcher',
             subs: [
                 { key: '/login', title: '登录' },

@@ -3,7 +3,7 @@
  */
 import Loadable from 'react-loadable';
 import Loading from './loading';
-import WLoading from './widget/Loading';
+// import WLoading from './widget/Loading'; // 自定义loading
 
 // 按需加载
 const BasicForm = Loadable({
@@ -23,16 +23,6 @@ const AdvancedTable = Loadable({
 
 const AsynchronousTable = Loadable({ 
     loader: () => import('./tables/AsynchronousTable'),
-    loading: Loading
-});
-
-const Echarts = Loadable({ 
-    loader: () => import('./charts/Echarts'),
-    loading: Loading
-});
-
-const Recharts = Loadable({ 
-    loader: () => import('./charts/Recharts'),
     loading: Loading
 });
 
@@ -58,5 +48,5 @@ const Demo = Loadable({
 
 export default {
     BasicForm, BasicTable, AdvancedTable, AsynchronousTable,
-    Echarts, Recharts, Dashboard, AuthBasic, RouterEnter, Demo
+    Dashboard, AuthBasic, RouterEnter, Demo
 }
