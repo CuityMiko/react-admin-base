@@ -1,5 +1,5 @@
 /**
- *  on 2017/4/28.
+ *  页面级别工具类.
  */
 // 获取url的参数
 export const queryString = () => {

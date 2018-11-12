@@ -73,7 +73,9 @@ class SiderCustom extends Component {
                 collapsed={this.props.collapsed}
                 style={{ overflowY: 'auto' }}
             >
-                <div className="logo" />
+                <div className="logo">
+                    {this.props.collapsed ? 'admin' : 'react-admin-base'}
+                </div>
                 <SiderMenu
                     menus={routes.menus}
                     onClick={this.menuClick}
