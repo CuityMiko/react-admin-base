@@ -11,10 +11,6 @@ import styles from './index.module.less';
 import qs from 'qs'
 
 class Cssmodule extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     componentDidMount() {
         // console.log(JSON.stringify(this.props.location))
         console.log(qs.parse(this.props.location.search.slice(1)).id)
