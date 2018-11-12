@@ -43,9 +43,7 @@ class Login extends React.Component {
             }
         });
     };
-    gitHub = () => {
-        window.location.href = 'https://github.com/login/oauth/authorize?client_id=792cdcd244e98dcd2dee&redirect_uri=http://localhost:3006/&scope=user&state=reactAdmin';
-    };
+    
     render() {
         const { getFieldDecorator } = this.props.form;
         return (
@@ -76,14 +74,13 @@ class Login extends React.Component {
                             })(
                                 <Checkbox>记住我</Checkbox>
                             )}
-                            <span className="login-form-forgot" href="" style={{float: 'right'}}>忘记密码</span>
+                            {/* <span className="login-form-forgot" href="" style={{float: 'right'}}>忘记密码</span> */}
                             <Button type="primary" htmlType="submit" className="login-form-button" style={{width: '100%'}}>
                                 登录
                             </Button>
-                            <p style={{display: 'flex', justifyContent: 'space-between'}}>
-                                <span >或 现在就去注册!</span>
-                                <span onClick={this.gitHub} ><Icon type="github" />(第三方登录)</span>
-                            </p>
+                            {/* <p style={{display: 'flex', justifyContent: 'space-between'}}>
+                                <span >去注册!</span>
+                            </p> */}
                         </FormItem>
                     </Form>
                 </div>
