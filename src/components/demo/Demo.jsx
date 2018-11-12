@@ -3,10 +3,18 @@
  */
 import React from 'react';
 import { Button } from 'antd';
+import qs from 'qs'
+
+import BreadcrumbCustom from '../BreadcrumbCustom';
 
 class Demo extends React.Component {
     state = {
         title: '这是一个Demo页面'
+    }
+
+    componentDidMount() {
+        // console.log(qs.parse(this.props.location.search.slice(1)).id)
+        // var _objstr = this.props.match.params.id;
     }
 
     componentWillUnmount() {
@@ -37,6 +45,7 @@ class Demo extends React.Component {
     render() {
         return (
             <div>
+                <BreadcrumbCustom first="demo" />
                 <p>{this.state.title}</p>
                 <Button type="primary" onClick={this.handleClick}>点击跳转</Button>
             </div>

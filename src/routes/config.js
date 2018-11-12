@@ -3,13 +3,6 @@ export default {
         { key: '/main/dashboard/index', title: '首页', icon: 'mobile', component: 'Dashboard' },
         { key: '/main/dome/index', title: 'Demo', icon: 'laptop', component: 'Demo' },
         {
-            key: '/main/animation', title: '动画', icon: 'rocket',
-            subs: [
-                { key: '/main/animation/basicAnimations', title: '基础动画', component: 'BasicAnimations'},
-                { key: '/main/animation/exampleAnimations', title: '动画案例', component: 'ExampleAnimations'},
-            ],
-        },
-        {
             key: '/main/table', title: '表格', icon: 'copy',
             subs: [
                 { key: '/main/table/basicTable', title: '基础表格', component: 'BasicTable'},
@@ -43,13 +36,11 @@ export default {
                 { key: '/main/auth/basic', title: '基础演示', component: 'AuthBasic' },
                 { key: '/main/auth/routerEnter', title: '路由拦截', component: 'RouterEnter', auth: 'auth/testPage' },
             ],
-        },
-        {
-            key: '/main/cssModule', title: 'cssModule', icon: 'star', component: 'Cssmodule'
-        },
-        {
-            key: '/main/cssModule/:id', title: 'cssModule', icon: 'star', component: 'Cssmodule'
-        },
+        }
     ],
-    others: [] // 非菜单相关路由
+    others: [
+        {
+            key: '/main/demo/index/:id', title: 'Demo', component: 'Demo'
+        }
+    ] // 非菜单相关路由
 }

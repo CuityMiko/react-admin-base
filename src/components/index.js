@@ -41,16 +41,6 @@ const Dashboard = Loadable({
     loading: Loading
 });
 
-const BasicAnimations = Loadable({ 
-    loader: () => import('./animation/BasicAnimations'),
-    loading: Loading
-});
-
-const ExampleAnimations = Loadable({ 
-    loader: () => import('./animation/ExampleAnimations'),
-    loading: Loading
-});
-
 const AuthBasic = Loadable({ 
     loader: () => import('./auth/Basic'),
     loading: Loading
@@ -61,11 +51,6 @@ const RouterEnter = Loadable({
     loading: Loading
 });
 
-const Cssmodule = Loadable({ 
-    loader: () => import('./cssmodule'),
-    loading: Loading
-});
-
 const Demo = Loadable({ 
     loader: () => import('./demo/Demo'),
     loading: Loading
@@ -73,7 +58,5 @@ const Demo = Loadable({
 
 export default {
     BasicForm, BasicTable, AdvancedTable, AsynchronousTable,
-    Echarts, Recharts, Dashboard, BasicAnimations,
-    ExampleAnimations, AuthBasic, RouterEnter,
-    Cssmodule, Demo
+    Echarts, Recharts, Dashboard, AuthBasic, RouterEnter, Demo
 }
