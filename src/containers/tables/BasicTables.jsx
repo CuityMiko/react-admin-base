@@ -6,7 +6,7 @@ import { Row, Col, Card } from 'antd';
 import SelectTable from './SelectTable';
 import SortTable from './SortTable';
 import SearchTable from './SearchTable';
-import BreadcrumbCustom from '../BreadcrumbCustom';
+import BreadcrumbCustom from '../../components/common/BreadcrumbCustom';
 
 const BasicTables = () => (
     <div className="gutter-example">

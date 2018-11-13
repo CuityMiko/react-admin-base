@@ -17,13 +17,6 @@ export default {
             ],
         },
         {
-            key: '/subs4', title: '页面', icon: 'switcher',
-            subs: [
-                { key: '/login', title: '登录' },
-                { key: '/404', title: '404' },
-            ],
-        },
-        {
             key: '/main/auth', title: '权限管理', icon: 'safety',
             subs: [
                 { key: '/main/auth/basic', title: '基础演示', component: 'AuthBasic' },

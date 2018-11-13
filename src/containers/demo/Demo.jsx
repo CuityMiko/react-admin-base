@@ -5,7 +5,7 @@ import React from 'react';
 import { Button } from 'antd';
 import qs from 'qs'
 
-import BreadcrumbCustom from '../BreadcrumbCustom';
+import BreadcrumbCustom from '../../components/common/BreadcrumbCustom';
 
 class Demo extends React.Component {
     state = {

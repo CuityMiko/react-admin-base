@@ -3,7 +3,7 @@
  */
 import React from 'react';
 import { Row, Col, Card, Timeline, Icon } from 'antd';
-import BreadcrumbCustom from '../BreadcrumbCustom';
+import BreadcrumbCustom from '../../components/common/BreadcrumbCustom';
 import EchartsViews from './EchartsViews';
 import EchartsProjects from './EchartsProjects';
 import b1 from '../../style/imgs/b1.jpg';

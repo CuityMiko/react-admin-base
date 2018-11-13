@@ -6,7 +6,7 @@ import { Card, Form, Input, Tooltip, Icon, Cascader, Select, Row, Col, Checkbox,
 import LoginForm from './LoginForm';
 import ModalForm from './ModalForm';
 import HorizontalForm from './HorizontalForm';
-import BreadcrumbCustom from '../BreadcrumbCustom';
+import BreadcrumbCustom from '../../components/common/BreadcrumbCustom';
 const FormItem = Form.Item;
 const Option = Select.Option;
 

@@ -6,7 +6,7 @@ import { Row, Col, Card } from 'antd';
 import FixedTable from './FixedTable';
 import ExpandedTable from './ExpandedTable';
 import EditableTable from './EditableTable';
-import BreadcrumbCustom from '../BreadcrumbCustom';
+import BreadcrumbCustom from '../../components/common/BreadcrumbCustom';
 
 class AdvancedTables extends React.Component {
     render() {
