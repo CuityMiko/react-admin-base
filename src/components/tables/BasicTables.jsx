@@ -3,7 +3,6 @@
  */
 import React from 'react';
 import { Row, Col, Card } from 'antd';
-import BasicTable from './BasicTable';
 import SelectTable from './SelectTable';
 import SortTable from './SortTable';
 import SearchTable from './SearchTable';
@@ -12,15 +11,6 @@ import BreadcrumbCustom from '../BreadcrumbCustom';
 const BasicTables = () => (
     <div className="gutter-example">
         <BreadcrumbCustom first="表格" second="基础表格" />
-        <Row gutter={16}>
-            <Col className="gutter-row" md={24}>
-                <div className="gutter-box">
-                    <Card title="基础表格" bordered={false}>
-                        <BasicTable />
-                    </Card>
-                </div>
-            </Col>
-        </Row>
         <Row gutter={16}>
             <Col className="gutter-row" md={24}>
                 <div className="gutter-box">

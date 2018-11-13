@@ -68,7 +68,7 @@ class SelectTable extends React.Component {
             onSelection: this.onSelection,
         };
         return (
-            <Table rowSelection={rowSelection} columns={columns} dataSource={data} />
+            <Table rowSelection={rowSelection} columns={columns} dataSource={data} pagination={{pageSize: 5}} />
         );
     }
 }
