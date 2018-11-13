@@ -1,8 +1,8 @@
 
 import React, { Component } from 'react';
 import { Row, Col, Card } from 'antd';
-import BreadcrumbCustom from '@/components/BreadcrumbCustom';
-import AuthWidget from '@/components/widget/AuthWidget';
+import BreadcrumbCustom from '@/containers/BreadcrumbCustom';
+import AuthWidget from '@/containers/widget/AuthWidget';
 
 class RouterEnter extends Component {
     componentDidMount() {

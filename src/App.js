@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Layout, notification, Icon } from 'antd';
-import SiderCustom from './components/SiderCustom';
-import HeaderCustom from './components/HeaderCustom';
+import SiderCustom from './containers/SiderCustom';
+import HeaderCustom from './containers/HeaderCustom';
 import { receiveData } from './action';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Routes from './routes';
-// import { ThemePicker } from './components/widget';
+// import { ThemePicker } from './containers/widget';
 
 const { Content, Footer } = Layout;
 
