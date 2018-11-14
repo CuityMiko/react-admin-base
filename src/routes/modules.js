@@ -1,22 +1,25 @@
+/**
+ * 路由组件出口文件
+ */
+import Loadable from 'react-loadable';
+import {Loading} from '../components/widget';
+
+// 按需加载
+const BasicForm = Loadable({
+    loader: () => import('../containers/forms/BasicForm'),
+    loading: Loading
+});
+
+const BasicTable = Loadable({ 
+    loader: () => import('../containers/tables/BasicTables'),
+    loading: Loading
+});
+
+const Dashboard = Loadable({ 
+    loader: () => import('../containers/dashboard/Dashboard'),
+    loading: Loading
+});
+
 export default {
-    menus: [ // 菜单相关路由
-        { key: '/main/dashboard/index', title: '首页', icon: 'mobile', component: 'Dashboard' },
-        {
-            key: '/main/table', title: '表格', icon: 'copy',
-            subs: [
-                { key: '/main/table/basicTable', title: '基础表格', component: 'BasicTable'}
-            ],
-        },
-        {
-            key: '/main/form', title: '表单', icon: 'edit',
-            subs: [
-                { key: '/main/form/basicForm', title: '基础表单', component: 'BasicForm'},
-            ],
-        }
-    ],
-    others: [
-        {
-            key: '/main/demo/index/:id', title: 'Demo', component: 'Demo'
-        }
-    ] // 非菜单相关路由
+    BasicForm, BasicTable, Dashboard
 }
