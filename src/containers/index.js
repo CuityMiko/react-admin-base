@@ -40,12 +40,7 @@ const RouterEnter = Loadable({
     loading: Loading
 });
 
-const Demo = Loadable({ 
-    loader: () => import('./demo/Demo'),
-    loading: Loading
-});
-
 export default {
     BasicForm, BasicTable, AdvancedTable, AsynchronousTable,
-    Dashboard, AuthBasic, RouterEnter, Demo
+    Dashboard, AuthBasic, RouterEnter
 }

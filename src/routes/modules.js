@@ -1,7 +1,6 @@
 export default {
     menus: [ // 菜单相关路由
         { key: '/main/dashboard/index', title: '首页', icon: 'mobile', component: 'Dashboard' },
-        { key: '/main/dome/index', title: 'Demo', icon: 'laptop', component: 'Demo' },
         {
             key: '/main/table', title: '表格', icon: 'copy',
             subs: [
