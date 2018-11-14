@@ -22,7 +22,7 @@ service.interceptors.request.use(config => {
 
 // respone拦截器
 service.interceptors.response.use(
-  response => response.data,
+  response => response,
   error => {
     console.log('err' + error) // for debug
     // 提示错误信息
