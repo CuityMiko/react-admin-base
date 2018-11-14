@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { Route, Redirect, Switch } from 'react-router-dom';
 import AllComponents from '../containers';
-import routesConfig from './config';
+import routesConfig from './modules';
 
 export default class CRouter extends Component {
     requireAuth = (permission, component) => {
