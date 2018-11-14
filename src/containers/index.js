@@ -2,8 +2,7 @@
  * 路由组件出口文件
  */
 import Loadable from 'react-loadable';
-import Loading from '../components/loading';
-// import WLoading from './widget/Loading'; // 自定义loading
+import {Loading} from '../components/widget/';
 
 // 按需加载
 const BasicForm = Loadable({
