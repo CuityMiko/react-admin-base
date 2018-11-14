@@ -2,7 +2,7 @@
  *  on 2017/4/16.
  */
 import axios from 'axios';
-import { get } from './tools';
+import { get, post } from './tools';
 import * as config from './config';
 
 export const getPros = () => axios.post('http://api.xitu.io/resources/github', {
@@ -12,6 +12,7 @@ export const getPros = () => axios.post('http://api.xitu.io/resources/github', {
     offset: 0,
     limit: 30
 }).then(function (response) {
+    console.log(response, 'dadsa')
     return response.data;
 }).catch(function (error) {
     console.log(error);
