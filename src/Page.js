@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-import NotFound from './containers/NotFound';
+import NotFound from './containers/404/NotFound';
 import Login from './containers/login/Login';
 import App from './App';
 
