@@ -1,11 +1,8 @@
-/**
- *  on 2017/4/15.
- */
 import React from 'react';
 import { Row, Col, Card } from 'antd';
 import SelectTable from './SelectTable';
 import SortTable from './SortTable';
-import SearchTable from './SearchTable';
+import EditableTable from './EditableTable';
 import BreadcrumbCustom from '../../components/common/BreadcrumbCustom';
 
 const BasicTables = () => (
@@ -30,8 +27,8 @@ const BasicTables = () => (
             </Col>
             <Col className="gutter-row" md={12}>
                 <div className="gutter-box">
-                    <Card title="自定义筛选" bordered={false}>
-                        <SearchTable />
+                    <Card title="可编辑" bordered={false}>
+                        <EditableTable />
                     </Card>
                 </div>
             </Col>
