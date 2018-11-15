@@ -71,7 +71,8 @@ class App extends Component {
                 </Layout>
                 
                 {
-                    responsive.data.isMobile && (   // 手机端对滚动很慢的处理
+                    // 手机端对滚动很慢的处理
+                    responsive.data.isMobile && (
                         <style>
                         {`
                             #root{
