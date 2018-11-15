@@ -9,7 +9,6 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 const { Header } = Layout;
 const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
 
 class HeaderCustom extends Component {
     state = {

@@ -7,6 +7,7 @@ const ignoredFiles = require('react-dev-utils/ignoredFiles');
 const config = require('./webpack.config.dev');
 const paths = require('./paths');
 const fs = require('fs');
+const siteConf = require('../site_conf')
 
 const protocol = process.env.HTTPS === 'true' ? 'https' : 'http';
 const host = process.env.HOST || '0.0.0.0';
@@ -84,7 +85,7 @@ module.exports = function(proxy, allowedHost) {
     public: allowedHost,
     proxy: {
       '/api': {
-        target: 'https://member.h5.chuangjiangx.com',
+        target: siteConf.api_host,
         changeOrigin: true,
         pathRewrite: {
             '^/api': '/h5'                  

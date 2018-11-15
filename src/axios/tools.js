@@ -1,8 +1,6 @@
 /**
- * 
  * http通用工具函数
  */
-import axios from 'axios';
 import { message } from 'antd';
 import http from './http'
 
