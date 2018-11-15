@@ -5,7 +5,7 @@ import React from 'react';
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { fetchData, receiveData } from '@/action';
+import { fetchData, receiveData } from '@/redux/actions';
 
 const FormItem = Form.Item;
 

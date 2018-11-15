@@ -4,7 +4,7 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { createStore, applyMiddleware } from 'redux';
-import reducer from './reducer';
+import reducer from './redux/reducers';
 import { AppContainer } from 'react-hot-loader';
 import Page from './routes/index';
 import './style/lib/animate.css';

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Layout, notification, Icon } from 'antd';
 import SiderCustom from '../components/menu/SiderCustom';
 import HeaderCustom from '../components/header/HeaderCustom';
-import { receiveData } from '../action';
+import { receiveData } from '../redux/actions';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Routes from '../routes/router';
