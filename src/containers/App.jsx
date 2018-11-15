@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Layout, notification, Icon } from 'antd';
-import SiderCustom from './components/menu/SiderCustom';
-import HeaderCustom from './components/header/HeaderCustom';
-import { receiveData } from './action';
+import SiderCustom from '../components/menu/SiderCustom';
+import HeaderCustom from '../components/header/HeaderCustom';
+import { receiveData } from '../action';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import Routes from './routes';
+import Routes from '../routes/router';
 // import { ThemePicker } from './containers/widget';
 
 const { Content, Footer } = Layout;
@@ -70,7 +70,7 @@ class App extends Component {
                     </Footer>
                 </Layout>
                 
-                {/* {
+                {
                     responsive.data.isMobile && (   // 手机端对滚动很慢的处理
                         <style>
                         {`
@@ -80,7 +80,7 @@ class App extends Component {
                         `}
                         </style>
                     )
-                } */}
+                }
             </Layout>
         );
     }
