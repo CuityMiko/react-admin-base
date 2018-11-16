@@ -9,6 +9,9 @@ import b1 from '../../style/imgs/b1.jpg';
 
 
 class Dashboard extends React.Component {
+    goToTable = () => {
+        this.props.history.push('/main/table/basicTable?id=1&name=zhangsan');
+    }
     render() {
         return (
             <div className="gutter-example button-demo">
@@ -17,7 +20,7 @@ class Dashboard extends React.Component {
                     <Col className="gutter-row" md={6}>
                         <div className="gutter-box">
                             <Card bordered={false}>
-                                <div className="clear y-center">
+                                <div className="clear y-center" onClick={this.goToTable}>
                                     <div className="pull-left mr-m">
                                         <Icon type="heart" className="text-2x text-danger" />
                                     </div>
