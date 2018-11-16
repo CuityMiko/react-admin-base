@@ -87,6 +87,7 @@ module.exports = function(proxy, allowedHost) {
       '/api': {
         target: siteConf.api_host,
         changeOrigin: true,
+        ws: true,
         pathRewrite: {
             '^/api': '/h5'                  
         }

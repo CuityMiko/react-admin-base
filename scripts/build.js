@@ -126,6 +126,9 @@ function build(previousFileSizes) {
 
   let compiler = webpack(config);
   return new Promise((resolve, reject) => {
+    compiler.apply(new webpack.ProgressPlugin({
+         profile: true
+    }));
     compiler.run((err, stats) => {
       let messages;
       if (err) {

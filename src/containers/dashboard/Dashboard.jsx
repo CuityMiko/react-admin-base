@@ -5,7 +5,6 @@ import React from 'react';
 import { Row, Col, Card, Timeline, Icon } from 'antd';
 import BreadcrumbCustom from '../../components/common/BreadcrumbCustom';
 import EchartsViews from './EchartsViews';
-import EchartsProjects from './EchartsProjects';
 import b1 from '../../style/imgs/b1.jpg';
 
 
@@ -15,7 +14,7 @@ class Dashboard extends React.Component {
             <div className="gutter-example button-demo">
                 <BreadcrumbCustom />
                 <Row gutter={10}>
-                    <Col className="gutter-row" md={4}>
+                    <Col className="gutter-row" md={6}>
                         <div className="gutter-box">
                             <Card bordered={false}>
                                 <div className="clear y-center">
@@ -29,6 +28,23 @@ class Dashboard extends React.Component {
                                 </div>
                             </Card>
                         </div>
+                    </Col>
+                    <Col className="gutter-row" md={6}>
+                        <div className="gutter-box">
+                            <Card bordered={false}>
+                                <div className="clear y-center">
+                                    <div className="pull-left mr-m">
+                                        <Icon type="camera" className="text-2x text-info" />
+                                    </div>
+                                    <div className="clear">
+                                        <div className="text-muted">照片</div>
+                                        <h2>802</h2>
+                                    </div>
+                                </div>
+                            </Card>
+                        </div>
+                    </Col>
+                    <Col className="gutter-row" md={6}>
                         <div className="gutter-box">
                             <Card bordered={false}>
                                 <div className="clear y-center">
@@ -43,20 +59,7 @@ class Dashboard extends React.Component {
                             </Card>
                         </div>
                     </Col>
-                    <Col className="gutter-row" md={4}>
-                        <div className="gutter-box">
-                            <Card bordered={false}>
-                                <div className="clear y-center">
-                                    <div className="pull-left mr-m">
-                                        <Icon type="camera" className="text-2x text-info" />
-                                    </div>
-                                    <div className="clear">
-                                        <div className="text-muted">照片</div>
-                                        <h2>802</h2>
-                                    </div>
-                                </div>
-                            </Card>
-                        </div>
+                    <Col className="gutter-row" md={6}>
                         <div className="gutter-box">
                             <Card bordered={false}>
                                 <div className="clear y-center">
@@ -68,13 +71,6 @@ class Dashboard extends React.Component {
                                         <h2>102</h2>
                                     </div>
                                 </div>
-                            </Card>
-                        </div>
-                    </Col>
-                    <Col className="gutter-row" md={16}>
-                        <div className="gutter-box">
-                            <Card bordered={false} className={'no-padding'}>
-                                <EchartsProjects />
                             </Card>
                         </div>
                     </Col>

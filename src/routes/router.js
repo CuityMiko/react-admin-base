@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Route, Redirect, Switch } from 'react-router-dom';
 import AllComponents from './modules';
 import routesConfig from './config';
+import queryString from 'query-string';
 
 export default class CRouter extends Component {
     requireAuth = (permission, component) => {
@@ -33,9 +34,12 @@ export default class CRouter extends Component {
                                         key={r.route || r.key}
                                         exact
                                         path={r.route || r.key}
-                                        render={props => r.login ? 
+                                        render={props => {
+                                            Object.assign(props, {query: queryString.parse(props.location.search)});
+                                            return r.login ? 
                                             <Component {...props} />
                                             : this.requireLogin(<Component {...props} />, r.auth)}
+                                        }
                                     />
                                 )
                             }
