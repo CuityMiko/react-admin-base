@@ -6,17 +6,18 @@ import routesConfig from './config';
 import queryString from 'query-string';
 
 export default class CRouter extends Component {
+    // 权限验证
     requireAuth = (permission, component) => {
         const { auth } = this.props;
         const { permissions } = auth.data;
-        // const { auth } = store.getState().httpData;
         if (!permissions || !permissions.includes(permission)) return <Redirect to={'404'} />;
         return component;
     };
+    // 登录验证
     requireLogin = (component, permission) => {
         const { auth } = this.props;
         const { permissions } = auth.data;
-        if (!permissions) { // 线上环境判断是否登录
+        if (!permissions) {
             return <Redirect to={'/login'} />;
         }
         return permission ? this.requireAuth(permission, component) : component;
@@ -25,7 +26,7 @@ export default class CRouter extends Component {
         return (
             <Switch>
                 {
-                    Object.keys(routesConfig).map(key => 
+                    Object.keys(routesConfig).map(key => {
                         routesConfig[key].map(r => {
                             const route = r => {
                                 const Component = AllComponents[r.component];
@@ -45,7 +46,7 @@ export default class CRouter extends Component {
                             }
                             return r.component ? route(r) : r.subs.map(r => route(r));
                         })
-                    )
+                    })
                 }
 
                 <Route render={() => <Redirect to="/404" />} />
