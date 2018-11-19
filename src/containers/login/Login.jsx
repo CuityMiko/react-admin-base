@@ -1,6 +1,3 @@
-/**
- *  on 2017/4/16.
- */
 import React from 'react';
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
 import { connect } from 'react-redux';

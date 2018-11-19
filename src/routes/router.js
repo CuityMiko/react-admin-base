@@ -26,7 +26,7 @@ export default class CRouter extends Component {
         return (
             <Switch>
                 {
-                    Object.keys(routesConfig).map(key => {
+                    Object.keys(routesConfig).map(key => 
                         routesConfig[key].map(r => {
                             const route = r => {
                                 const Component = AllComponents[r.component];
@@ -46,7 +46,7 @@ export default class CRouter extends Component {
                             }
                             return r.component ? route(r) : r.subs.map(r => route(r));
                         })
-                    })
+                    )
                 }
 
                 <Route render={() => <Redirect to="/404" />} />

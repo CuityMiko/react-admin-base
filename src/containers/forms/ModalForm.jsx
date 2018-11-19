@@ -1,6 +1,3 @@
-/**
- *  on 2017/4/15.
- */
 import React, { Component } from 'react';
 import { Button, Modal, Form, Input, Radio } from 'antd';
 const FormItem = Form.Item;
