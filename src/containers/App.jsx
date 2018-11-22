@@ -31,7 +31,7 @@ class App extends Component {
               description: (
                   <div>
                       <p>
-                        欢迎进入React-Antd-Base后台管理管理系统
+                        欢迎进入油站后台管理管理系统
                       </p>
                   </div>
               ),
@@ -66,7 +66,7 @@ class App extends Component {
                         <Routes auth={auth} />
                     </Content>
                     <Footer style={{ textAlign: 'center' }}>
-                    React-Admin-Base ©{new Date().getFullYear()} Created by Cuity
+                    oilStation-manage-frontend ©{new Date().getFullYear()} Created by CJ-FE
                     </Footer>
                 </Layout>
                 

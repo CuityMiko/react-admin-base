@@ -7,7 +7,7 @@ import App from '../containers/App.jsx';
 export default () => (
     <Router>
         <Switch>
-            <Route exact path="/" render={() => <Redirect to="/main/dashboard/index" push />} />        
+            <Route exact path="/" render={() => <Redirect to="/main/index" push />} />        
             <Route path="/main" component={App} />
             <Route path="/404" component={NotFound} />
             <Route path="/login" component={Login} />
