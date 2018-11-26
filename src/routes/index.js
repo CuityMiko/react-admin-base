@@ -1,8 +1,8 @@
 import React from 'react';
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-import NotFound from '../containers/404/NotFound';
-import Login from '../containers/login/Login';
-import App from '../containers/App.jsx';
+import NotFound from '../views/404/NotFound';
+import Login from '../views/login/Login';
+import App from '../views/App.jsx';
 
 export default () => (
     <Router>

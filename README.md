@@ -1,5 +1,5 @@
-# react-admin-base
-react-admin-base system solution
+# oilStation-manage-frontend
+oilStation-manage-frontend system solution
 
 <img src="https://raw.githubusercontent.com/yezihaohao/react-admin/master/screenshots/logo.png" alt="logo" width="150" height="53" />
 
@@ -33,6 +33,8 @@ react-admin-base system solution
 +-- src/                                    ---核心代码目录
 |   +-- axios                               ---http请求存放目录
 |   |    --- index.js
+|   +-- pub-sub-events                      ---事件发布订阅机制
+|   |    --- index.js
 |   +-- components                          ---各式各样的组件存放目录
 |   |    +-- common                         ---公共组件封装
 |   |    |    --- BreadcrumbCustom.jsx      ---面包屑组件
@@ -40,7 +42,7 @@ react-admin-base system solution
 |   |    |    --- ...   
 |   |    --- HeaderCustom.jsx               ---顶部导航组件
 |   |    --- SiderCustom.jsx                ---左边菜单组件
-|   +-- containers                          ---页面容器存放目录
+|   +-- views                          ---页面容器存放目录
 |   |    +-- charts                         ---图表组件
 |   |    |    --- ...   
 |   |    +-- forms                          ---表单组件
@@ -66,6 +68,9 @@ react-admin-base system solution
 ```
 ### 安装运行
 ##### 1.下载或克隆项目源码
+```
+git clone -b develop http://gitlab.cloudrelation.com/cuitongyang/oilStation-manage-frontend.git
+```
 ##### 2.npm安装相关包文件(国内建议增加淘宝镜像源，不然很慢，你懂的😁)
 > 有些老铁遇到运行时报错，首先确定下是不是最新稳定版的nodejs和npm（推荐使用6.10/11.0），切记不要用cnpn
 
