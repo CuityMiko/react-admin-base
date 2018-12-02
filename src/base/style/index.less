@@ -1,0 +1,112 @@
+@import "variables";
+@import "./antd/modules/global";
+@import "./antd/modules/scroll";
+@import "./antd/modules/table";
+@import "./antd/modules/icons";
+@import "./antd/modules/button";
+@import "./antd/modules/modal";
+@import "./antd/modules/menu";
+@import "./antd/modules/banner";
+@import "./antd/modules/card";
+@import "./antd/modules/img";
+@import "./antd/modules/utils-text";
+@import "./antd/modules/utils-color";
+@import "./antd/modules/utils-size";
+@import "./antd/modules/utils-border";
+@import "./antd/modules/utils-spacing";
+
+// 登录
+@import '../../login/login';
+
+// 404
+@import '../../common/components/404/notfound';
+
+// 首页
+@import '../../main/home';
+
+// 授权中心
+@import '../../authorize_center/authorize_center';
+
+// 数据中心
+@import '../../data_center/data_center';
+
+// 营销中心
+@import '../../marketing_center/marketing_center';
+
+// 会员中心
+@import '../../member_center/member_center';
+
+// 油品管理
+@import '../../oil_manage/oil_manage';
+
+// 油站管理
+@import '../../oiltation_manage/oiltation_manage';
+
+// Demo
+@import '../../demo/demo';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#root{
+  height: 100%;
+}
+.ant-layout{
+  height: 100%;
+  .logo{
+    height: 3rem;
+    margin: 16px;
+    color:white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo img{
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .logo span{
+    margin-left: .3rem;
+  }
+  .ant-layout-sider-collapsed{
+    .anticon{
+      font-size: 16px;
+      // margin-left: 8px;
+    }
+    .nav-text{
+      display: none;
+    }
+    .ant-menu-submenu-vertical > .ant-menu-submenu-title:after{
+      display: none;
+    }
+    .ant-menu-dark:not(.ant-menu-inline) .ant-menu-submenu-open {
+      color: inherit;
+    }
+  }
+  p {
+    margin: 10px 0 10px 0;
+  }
+}
+.gutter-example{
+  .ant-row{
+    //margin-left: 0 !important;
+    //margin-right: 0 !important;
+    >div{
+      background: transparent;
+      border: 0;
+    }
+  }
+}
+.gutter-box {
+  padding: 5px 0;
+}
+
+:global {
+  .ant-card-head-title {
+    font-size: 14px !important;
+  }
+}
